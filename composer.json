@@ -1,0 +1,37 @@
+{
+    "name": "mflor/pwned",
+    "description": "A clean and simple PHP library for interacting with all HaveIBeenPwned.com's API endpoints",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Magnus Flor",
+        "homepage": "https://github.com/MFlor",
+        "role": "Developer"
+      }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "fzaninotto/faker": "^1.8",
+        "php-coveralls/php-coveralls": "^2.1"
+    },
+    "autoload": {
+      "psr-4": {
+        "MFlor\\Pwned\\": "src/"
+      }
+    },
+  "autoload-dev": {
+    "psr-4": {
+      "MFlor\\Pwned\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "testdox": "vendor/bin/phpunit --testdox"
+  }
+}
